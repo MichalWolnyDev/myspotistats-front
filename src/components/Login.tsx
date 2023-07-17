@@ -8,7 +8,8 @@ interface Login {
 const Login = (props: Login) => {
 
   const loginButtonHandler = () => {
-    window.location.href = "http://localhost:8080/login";
+    // window.location.href = "http://localhost:8080/login";
+    window.location.href = "https://myspoti-backend.netlify.app/api/login";
   };
 
 
