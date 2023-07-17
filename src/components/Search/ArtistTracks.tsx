@@ -2,7 +2,7 @@ import styles from "../../assets/scss/search/ArtistTracks.module.scss";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/opacity.css";
 import { convertDuration } from "../../helpers/convertTime";
-import Player from "./Player";
+// import Player from "./Player";
 
 const ArtistTracks = (props: SearchResult) => {
   const tracks = props.data.slice(0, 6);
@@ -23,7 +23,7 @@ const ArtistTracks = (props: SearchResult) => {
                   src={track.album.images[0]?.url}
                   effect="opacity"
                 />
-                 {track.preview_url && <Player url={track.preview_url} />}
+                 {/* {track.preview_url && <Player url={track.preview_url} />} */}
               </div>
               <div className={styles.tracks__details}>
                 <p className={styles.tracks__artist}>

@@ -9,10 +9,10 @@ import "react-lazy-load-image-component/src/effects/opacity.css";
 
 
 const Listing = ({ data, loading, type }: {data: any, loading: boolean, type: string}) => {
-  const [showDetails, setShowDetails] = useState(null);
+  const [showDetails, setShowDetails] = useState<string | null>(null);
 
-  const showDetailsHandler = (index: number) => {
-    setShowDetails((prev) => {
+  const showDetailsHandler = (index: string) => {
+    setShowDetails((prev: string | null) => {
       return prev === index ? null : index;
     });
   };
