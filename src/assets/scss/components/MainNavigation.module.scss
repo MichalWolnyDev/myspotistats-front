@@ -1,0 +1,25 @@
+.nav {
+    -webkit-box-shadow: 0px 8px 26px -11px rgba(29, 185, 84, 1);
+    -moz-box-shadow: 0px 8px 26px -11px rgba(29, 185, 84, 1);
+    box-shadow: 0px 8px 22px -8px rgba(29, 185, 84, 1);
+    margin-bottom: 3rem;
+
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 0;
+    }
+
+    &__logo {
+        color: $spotigreen;
+    }
+
+    &__menu{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+}

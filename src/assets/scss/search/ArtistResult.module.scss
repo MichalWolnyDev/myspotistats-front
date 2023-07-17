@@ -1,0 +1,23 @@
+.result {
+
+    &__name{
+        margin: 1em 0;
+        font-size: 22px;
+    }
+    &__img{
+        img {
+            width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        object-fit: cover;
+        }
+    }
+    &__type{
+        text-transform: capitalize;
+        background-color: $spotigray;
+        padding: .5em 1.3em;
+        border-radius: 50px;
+        display: inline-block;
+        font-size: 14px;
+    }
+}

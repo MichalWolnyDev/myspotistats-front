@@ -1,0 +1,51 @@
+.tracks {
+    &__row{
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        transition: all .3s ease-in-out;
+
+        &:hover{
+            background-color: $spotigray;
+
+            .tracks__cover{
+                img{
+                    opacity: .5;
+                }
+                svg{
+                    display: block;
+                }
+            }
+         
+        }
+    }
+    &__cover{
+        display: flex;
+        position: relative;
+        cursor: pointer;
+
+        svg {
+            display: none;
+            
+        }
+
+        img{
+            transition: all .3s ease-in-out;
+            width: 70px;
+            display: flex;
+        }
+    }
+    &__details{
+        padding: 0 1rem;
+        flex: 2;
+    }
+    &__artist{
+        font-size: 18px;
+    }
+    &__duration{
+        margin-right: 1rem;
+    }
+    &__audio{
+        display: none;
+    }
+}

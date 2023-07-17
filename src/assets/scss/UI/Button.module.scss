@@ -1,0 +1,26 @@
+.button {
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid $spotigreen;
+    border-radius: 50px;
+    padding: .8em 2em;
+    color: #fff;
+    transition: all .3s ease-in-out;
+    font-weight: 600;
+
+    &:hover {
+        background: $spotigreen;
+    }
+    &.active{
+        background: $spotigreen;
+    }
+    &.mode {
+        &__white{
+            border: 2px solid $white;
+        }
+    }
+    &.disabled{
+        cursor: not-allowed;
+        opacity: .4;
+    }
+}

@@ -1,0 +1,16 @@
+.footer {
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid $spotigreen;
+    margin-top: auto;
+
+    p {
+        color: $gray;
+
+    }
+
+    &__row{
+        display: flex;
+        justify-content: space-between;
+    }
+}

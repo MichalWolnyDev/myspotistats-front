@@ -1,0 +1,21 @@
+.playlist {
+    margin: 20px 0 50px;
+
+    &__header {
+        text-align: center;
+        margin: 0 0 40px;
+    }
+    &__item {
+        padding: 2em;
+        border-bottom: 1px solid $spotigreen;
+        text-align: center;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            -webkit-box-shadow: inset 0px 0px 15px 0px rgba(29, 185, 84, 1);
+            -moz-box-shadow: inset 0px 0px 15px 0px rgba(29, 185, 84, 1);
+            box-shadow: inset 0px 0px 15px 0px rgba(29, 185, 84, 1);
+        }
+    
+    }
+}
