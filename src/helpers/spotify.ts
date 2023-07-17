@@ -49,7 +49,8 @@ export const getAuthToken = () => {
 
 
     if (tokenExpired) {
-        window.location.href = `http://localhost:8080/login?refresh_token=${refresh_token}`
+        // window.location.href = `http://localhost:8080/login?refresh_token=${refresh_token}`
+        window.location.href = `https://myspoti-backend.netlify.app/api/login?refresh_token=${refresh_token}`
     }
 
     return token;
